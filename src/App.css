@@ -1,0 +1,100 @@
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* CLASSES */
+pre {
+  background-color: #2b2b2b !important;
+  border: 1px solid #171717;
+  border-radius: 4px;
+  padding: 1em;
+  overflow-x: auto;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+code {
+  font-family: envy-code-r, monospace;
+  font-style: italic;
+  font-size: 11pt;
+  line-height: 1.4;
+  color: #c1c1c1;
+}
+
+p {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CLASS NAMES */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: transform, filter;
+  transition: transform 5ms ease-in-out, filter 300ms ease-in-out;
+  animation: logo-animation 3000ms ease-in-out forwards;
+  margin-top: 190px;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 3em #ffffff);
+}
+
+.quote {
+  font-family: anonymous-pro, monospace;
+  font-weight: normal;
+  font-style: italic;
+  color: #888;
+  animation: firsth-animation 2500ms ease-in-out forwards;
+  margin-bottom: 200px;
+}
+
+.firsth {
+  animation: firsth-animation 2500ms ease-in-out forwards;
+  font-family: anonymous-pro, monospace;
+  font-weight: normal;
+  margin-bottom: 0em;
+}
+
+.code-explanation {
+  font-family: monospace;
+  font-size: 11px;
+  line-height: 0;
+  color: #888;
+}
+
+.code-div {
+  margin: auto auto;
+  width: auto !important;
+}
+
+.smallh {
+  font-style: italic;
+  text-align: center;
+  color: #888;
+}
+
+/* KEYFRAMES */
+@keyframes logo-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes firsth-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
