@@ -37,7 +37,7 @@ p {
   height: 6em;
   padding: 1.5em;
   will-change: transform, filter;
-  transition: transform 5ms ease-in-out, filter 300ms ease-in-out;
+  transition: transform 5ms linear, filter 300ms ease-in-out;
   animation: logo-animation 3000ms ease-in-out forwards;
   margin-top: 190px;
 }

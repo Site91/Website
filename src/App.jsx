@@ -2,10 +2,11 @@ import { useEffect } from 'react';
 import './App.css';
 import AboutUs from "./Wiki/Paragraphs/AboutUs/AboutUs.jsx";
 import CodeExample from "./Wiki/Paragraphs/CodeExample/CodeExample.jsx";
+import HowToJoin from "./Wiki/Paragraphs/HowToJoin/HowToJoin.jsx";
 
 function App() {
     useEffect(() => {
-        let rotation = 0;
+        let rotation = 1;
 
         const handleScroll = () => {
             const logo = document.querySelector('.logo');
@@ -38,18 +39,10 @@ function App() {
             <h1>About us</h1>
             <AboutUs />
             <h1>How to join?</h1>
-            <p>To join our community, begin by downloading and installing the Technic Launcher. Open the launcher and
-                log in with your Minecraft account. Navigate to the &quot;Modpacks&quot; tab, then search for and select
-                the Site-91 modpack. Download and launch it, and when Minecraft starts, look for a prominent button
-                labeled &quot;Join Site-91&quot; and click it.</p>
-            <p>The server will take a few moments to start up, so if you encounter any issues, please wait 3-5 minutes
-                and try again. For access to different levels and departments, be sure to join our <a
-                    href="#links">Discord</a> server.</p>
+            <HowToJoin />
             <h2 id="links">Other links</h2>
             <CodeExample />
-            <p className="smallh">
-                Hello from the developers of website!
-            </p>
+            <p className="smallh">Hello from the devs!</p>
         </>
     );
 }
