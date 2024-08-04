@@ -1,8 +1,5 @@
 import { useEffect } from 'react';
 import './App.css';
-import AboutUs from "./Wiki/Paragraphs/AboutUs/AboutUs.jsx";
-import CodeExample from "./Wiki/Paragraphs/CodeExample/CodeExample.jsx";
-import HowToJoin from "./Wiki/Paragraphs/HowToJoin/HowToJoin.jsx";
 
 function App() {
     useEffect(() => {
@@ -12,7 +9,7 @@ function App() {
             const logo = document.querySelector('.logo');
             if (logo) {
                 const scrollY = window.scrollY;
-                rotation = (scrollY / 2) % 360;
+                rotation = (scrollY / 1.9) % 360;
 
                 logo.style.transform = `rotate(${rotation}deg)`;
             }
@@ -36,13 +33,18 @@ function App() {
             </div>
             <h1 className="firsth">Site-91</h1>
             <h3 className="quote">We die in the dark so that you may live in the light</h3>
-            <h1>About us</h1>
-            <AboutUs />
-            <h1>How to join?</h1>
-            <HowToJoin />
-            <h2 id="links">Other links</h2>
-            <CodeExample />
-            <p className="smallh">Hello from the devs!</p>
+            <a href="http://localhost:5173/src/Wiki/Paragraphs/CodeExample/index.html">
+                <button className="read-docs-button">
+                    Read the docs
+                </button>
+            </a>
+            <div className="social-links">
+                <a href="https://discord.gg/n2Xz3GVK5r" target="_blank" rel="noopener noreferrer">
+                    <img src="/src/assets/discord.svg" alt="Discord"/>
+                </a>
+                <a href="https://github.com/site91/" target="_blank" rel="noopener noreferrer">
+                    <img src="/src/assets/github.svg" alt="Github"/></a>
+            </div>
         </>
     );
 }

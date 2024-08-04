@@ -74,6 +74,32 @@ p {
   width: auto !important;
 }
 
+.read-docs-button {
+  background-color: rgba(0, 0, 0, 0);
+  outline-style: solid;
+  outline-width: 1px;
+  color: white;
+  gap: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.read-docs-icon {
+  color: white;
+  align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.social-links img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .smallh {
   font-style: italic;
   text-align: center;
